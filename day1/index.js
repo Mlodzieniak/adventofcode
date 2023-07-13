@@ -15,7 +15,7 @@ const readText = async () => {
   const text = await readTextPromise();
   const arr = text.split("\n");
   const mostCaloriesElf = [];
-  arr.reduce((acc, curr, i) => {
+  arr.reduce((acc, curr) => {
     if (curr === "") {
       mostCaloriesElf.push(acc);
       return 0;
